@@ -1,8 +1,14 @@
 let basket = JSON.parse(localStorage.getItem("basket")) || [];
 
+function updateBasketCount() {
+  const countEl = document.getElementById("basketCount");
+  if (countEl) countEl.textContent = basket.length;
+}
+
 function addToBasket(name, price, file) {
   basket.push({ name, price, file });
   localStorage.setItem("basket", JSON.stringify(basket));
+  updateBasketCount();
   alert(name + " added to basket");
 }
 
@@ -23,13 +29,12 @@ function renderBasket() {
 
   basket.forEach((item, index) => {
     total += item.price;
-
     const div = document.createElement("div");
+    div.className = "basket-item";
     div.innerHTML = `
-      ${item.name} – £${item.price.toFixed(2)}
+      <span>${item.name} – £${item.price.toFixed(2)}</span>
       <button onclick="removeItem(${index})">Remove</button>
     `;
-
     itemsDiv.appendChild(div);
   });
 
@@ -39,7 +44,12 @@ function renderBasket() {
 function removeItem(index) {
   basket.splice(index, 1);
   localStorage.setItem("basket", JSON.stringify(basket));
+  updateBasketCount();
   renderBasket();
 }
 
-document.addEventListener("DOMContentLoaded", renderBasket);
+document.addEventListener("DOMContentLoaded", () => {
+  updateBasketCount();
+  renderBasket();
+});
+
