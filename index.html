@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Azhend | GCSE & A-Level Revision</title>
+
+  <meta name="description" content="Azhend provides premium GCSE and A-Level revision materials, flashcards, and exam practice." />
+
+ <link rel="stylesheet" href="azhend/css/style.css">
+ <link rel="basket.html" href="gcse/gcsechemistry.html">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: #ffffff;
+      color: #000000;
+    }
+
+    header {
+      background: #000000;
+      color: #ffffff;
+      padding: 1.5rem;
+    }
+
+    .header-inner {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      color: #ffffff;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    main {
+      max-width: 1200px;
+      margin: auto;
+      padding: 3rem 1.5rem;
+    }
+
+    .hero {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+
+    .sections {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .card {
+      border: 2px solid #000;
+      padding: 2rem;
+      border-radius: 12px;
+    }
+
+    button {
+      margin-top: 1rem;
+      background: #000;
+      color: #fff;
+      border: 2px solid #000;
+      padding: 0.7rem 1.2rem;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #fff;
+      color: #000;
+    }
+
+    footer {
+      background: #f3f4f6;
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 4rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <h1>Azhend</h1>
+    <nav>
+      <a href="#gcse">GCSE</a>
+      <a href="#alevel">A-Level</a>
+      <a href="basket.html">🛒</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero">
+    <h2>Revision Built for Exam Success</h2>
+    <p>Clear, exam-focused flashcards for GCSE & A-Level students.</p>
+  </section>
+
+  <!-- GCSE SECTION -->
+  <section id="gcse">
+    <h2>GCSE Revision Resources</h2>
+    <div class="sections">
+
+      <div class="card">
+        <h3>GCSE Combined Science</h3>
+        <p>Definitions, equations & exam facts.</p>
+        <button><a href="gcse/combinedscience.html" class="btn">
+       GCSE Combined Science notes & resources
+         </a>
+        </button>
+         </div>
+
+       <div class="card">
+        <h3>GCSE Chemistry</h3>
+        <p>Definitions, equations & exam facts.</p>
+        <button>
+        <a 
+        href="gcse/gcsechemistry.html" class="btn">
+        GCSE Chemistry notes & resources
+        </a>
+        </button>
+        </div>
+
+      <div class="card">
+        <h3>GCSE Physics</h3>
+        <p>Forces, energy & electricity.</p>
+        <button>
+        <a 
+        href="gcse/gcsephysics.html" class="btn">
+        GCSE Physics notes & resources
+        </a>
+        </button>
+        </div>
+
+
+      <div class="card">
+        <h3>GCSE Biology</h3>
+       
+       <button>
+        <a 
+        href="gcse/gcsebiology.html" class="btn">
+        GCSE Biology notes & resources
+        </a>
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- A-LEVEL SECTION -->
+  <section id="alevel" style="margin-top:4rem;">
+    <h2>A-Level Notes</h2>
+    <div class="sections">
+
+      <div class="card">
+        <h3>A-Level Chemistry</h3>
+        <p></p>
+        <button>
+        <a 
+        href="alevel/alevelchemistry.html" class="btn">
+        A Level Chemistry notes & resources
+        </a>
+        </button>
+      </div>
+
+      <div class="card">
+        <h3>A-Level Physics</h3>
+        <button>
+       <a 
+        href="alevel/alevelphysics.html" class="btn">
+        A Level Physics notes & resources
+        </a>
+        </button>
+        
+      </div>
+
+      <div class="card">
+        <h3>A-Level Maths</h3>
+        <button>
+        <a 
+        href="alevel/alevelmaths.html" class="btn">
+        A level Maths notes & resources
+        </a>
+        </button>
+        
+      </div>
+
+    </div>
+  </section>
+
+  <section style="text-align:center; margin-top:4rem;">
+    <button onclick="window.location.href='basket.html'">
+      View Basket & Checkout
+    </button>
+  </section>
+
+</main>
+
+<footer>
+  <p>© 2025 Azhend. All rights reserved.</p>
+</footer>
+
+<!-- SHARED JAVASCRIPT -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
